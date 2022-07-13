@@ -6,7 +6,7 @@ public class exception {
         int c =a/b;
         }
         catch(ArithmeticException e){
-            System.out.println(e);
+           // System.out.println(e);
         }
         System.out.println("hello");
     }
