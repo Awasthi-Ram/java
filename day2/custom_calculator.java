@@ -1,4 +1,40 @@
+/*
+        Exercise 6: You have to create a custom calculator with following operations:
+        1. + -> Addition
+        2. - -> Subtraction
+        3. * -> Multiplication
+        4. / -> Division
+        which throws the following exceptions:
+        1. Invalid input Exception ex: 8 & 9
+        2. Cannot divide by 0 Exception
+        3. Max Input Exception if any of the inputs is greater than 100000
+        4. Max Multiplier Reached Exception - Don't allow any multiplication input to be greater than 7000
+
+        Use Custom Exception
+
+*/
+
+/**
+ * <p>
+ * <i>this is java doc for custom exception</i>
+ * </P>
+ * 
+ * @author Ram awasthi
+ * @version 14.23
+ * @since 27-07-2022
+ * @see <a href =
+ *      "https://docs.oracle.com/en/java/javase/18/docs/api/index.html" target=
+ *      "_blank">Java
+ *      docs ram</a>
+ **/
 public class custom_calculator {
+    /**
+     * hello this is a method
+     * 
+     * @param args this is argument 1 supply
+     * @deprecated this method is not in use
+     * 
+     */
     public static void main(String[] args) throws InvalidInputException {
         calculator c = new calculator();
 
@@ -7,6 +43,9 @@ public class custom_calculator {
     }
 }
 
+/**
+ * 
+ */
 class calculator {
     double add(double a, double b) throws InvalidInputException {
         if (a == 8 || b == 9)
@@ -15,6 +54,16 @@ class calculator {
             throw new InvalidInputException("max input expection no should be smaller than 10000");
         return a + b;
     }
+
+    /**
+     * hello this is a method
+     * 
+     * @param i this is argument 1 supply
+     * @param j this is argument 2 supply
+     * @return sum of two no.
+     * @throws Exception exeption satement
+     * 
+     */
 
     double subtraction(double a, double b) throws InvalidInputException {
         if (a > 10000 || b > 10000)

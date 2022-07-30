@@ -6,15 +6,26 @@ import java.util.TreeMap;
 
 import org.xml.sax.InputSource;
 
+/**
+ * @author ram awasthi
+ * @version 17.24
+ * @see <a href=
+ *      "https://docs.oracle.com/en/java/javase/18/docs/api/index.html">javadoc</a>
+ * @since 26-07-2022
+ **/
 // sorted insertion
 public class treemap {
+
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         TreeMap<Integer, String> tm = new TreeMap<Integer, String>();
         tm.put(7485, "ram");
-        tm.put(745, "loves");
-        tm.put(485, "palak");
-        tm.put(75, "sharm");
-        tm.put(5, "so much");
+        tm.put(745, "thinking");
+        tm.put(485, "about ");
+        tm.put(75, "some");
+        tm.put(5, "one");
 
         System.out.println(tm);
 
@@ -24,8 +35,8 @@ public class treemap {
             System.out.println(m.getKey() + "  " + m.getValue());
         }
         InputSource h1 = new InputSource();
-        InputStream h ;
-       // h.read("ram");
-        OutputStream f ;
+        InputStream h;
+        // h.read("ram");
+        OutputStream f;
     }
 }
